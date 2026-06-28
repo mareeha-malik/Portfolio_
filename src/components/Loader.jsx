@@ -2,13 +2,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 const lines = [
-  '$ npm run mareeha --cute',
-  '> resolving creativity@latest...',
-  '> drawing pixels by hand...',
-  '> compiling good vibes...',
-  '> done in 0.9s ✓',
+  "$ ./mareeha",
+  "> mounting workspace...",
+  "> injecting creativity...",
+  "> compiling ideas...",
+  "> access granted ✓",
 ]
-
 export default function Loader() {
   const [visible, setVisible] = useState(true)
   const [lineIndex, setLineIndex] = useState(0)
