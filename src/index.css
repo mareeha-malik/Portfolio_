@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* visible focus ring for accessibility, styled to match the brand instead of browser default */
+:focus-visible {
+  outline: 3px dashed #3a5bff;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* squiggly underline used for hand-drawn emphasis */
+.squiggle-underline {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 12'%3E%3Cpath d='M0 8 Q 12 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='%23FF6FA0' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 60px 12px;
+  background-position: bottom 0 left 0;
+  padding-bottom: 6px;
+}
+
+/* dotted grid background, used behind hero / section panels */
+.dotted-bg {
+  background-image: radial-gradient(circle, rgba(32, 32, 28, 0.18) 1.4px, transparent 1.4px);
+  background-size: 22px 22px;
+}
+
+/* sticky-note tape effect for client reviews */
+.tape::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 70px;
+  height: 24px;
+  background: rgba(255, 210, 63, 0.85);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* custom scrollbar, cute + thin */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff8ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffd23f;
+  border-radius: 10px;
+  border: 2px solid #fff8ee;
+}
