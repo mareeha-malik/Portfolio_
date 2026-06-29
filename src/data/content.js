@@ -448,7 +448,7 @@ export const hobbies = [
     rotate: -4,
   },
   { id: "h6", label: "Admiring Clouds", emoji: "☁️", image: sky1, rotate: 5 },
-  { id: "h7", label: "Some more Clouds", emoji: "🌱", image: sky2, rotate: -6 },
+  { id: "h7", label: "Some More Clouds", emoji: "🌱", image: sky2, rotate: -6 },
   {
     id: "h8",
     label: "A Little More Clouds",
@@ -460,6 +460,7 @@ export const hobbies = [
   { id: "h12", label: "Sunrise", emoji: "🏆", image: walk, rotate: -2 },
   { id: "h11", label: "Sunset", emoji: "🎭", image: sunset, rotate: 5 },
   { id: "h13", label: "Doodle", emoji: "✏️", image: doodle, rotate: -4 },
+  {id:15, label: "Won A Futsal Tournament", emoji: "🏆", image: trophy, rotate: 3},
   {
     id: "h14",
     label: "Best Ever Choc.Cake",

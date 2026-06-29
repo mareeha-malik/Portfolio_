@@ -37,17 +37,28 @@ export default function Designer() {
       <section className="px-5 sm:px-8 max-w-6xl mx-auto mt-16">
         <SectionLabel num="01" title="Logos" hint="small marks, big personality" />
         <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 gap-3 sm:gap-4 mt-6">
-          {logoImages.map((src, i) => (
-            <ScrollReveal key={src} delay={(i % 6) * 0.04}>
-              <motion.div
-                whileHover={{ scale: 1.08, rotate: 0, zIndex: 10 }}
-                style={{ rotate: ((i % 5) - 2) * 2.4 }}
-                className="aspect-square rounded-xl border-[3px] border-ink bg-white overflow-hidden flex items-center justify-center p-2"
-              >
-                <img src={src} alt={`Logo design ${i + 1}`} className="w-full h-full object-contain" loading="lazy" />
-              </motion.div>
-            </ScrollReveal>
-          ))}
+          {logoImages.map((src, i) => {
+  const darkBg = [3, 14, 15, 16].includes(i) // logo #4, #15, #16, #17
+
+  return (
+    <ScrollReveal key={src} delay={(i % 6) * 0.04}>
+      <motion.div
+        whileHover={{ scale: 1.08, rotate: 0, zIndex: 10 }}
+        style={{ rotate: ((i % 5) - 2) * 2.4 }}
+        className={`aspect-square rounded-xl border-[3px] border-ink overflow-hidden flex items-center justify-center p-2 ${
+          darkBg ? "bg-black" : "bg-white"
+        }`}
+      >
+        <img
+          src={src}
+          alt={`Logo design ${i + 1}`}
+          className="w-full h-full object-contain"
+          loading="lazy"
+        />
+      </motion.div>
+    </ScrollReveal>
+  )
+})}
         </div>
       </section>
 
