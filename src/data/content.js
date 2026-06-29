@@ -41,10 +41,10 @@ export const siteInfo = {
   // Leave as null to keep showing the placeholder polaroid.
   // avatar: null,
   socials: [
-    { label: "Instagram", href: "https://instagram.com/", icon: "instagram" },
-    { label: "Behance", href: "https://behance.net/", icon: "behance" },
-    { label: "GitHub", href: "https://github.com/", icon: "github" },
-    { label: "LinkedIn", href: "https://linkedin.com/", icon: "linkedin" },
+    { label: "Instagram", href: "https://www.instagram.com/mareeha._.2925/", icon: "instagram" },
+    // { label: "Behance", href: "https://behance.net/", icon: "behance" },
+    { label: "GitHub", href: "https://github.com/mareeha-malik", icon: "github" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/mareeha-malik/", icon: "linkedin" },
   ],
 };
 
@@ -282,7 +282,7 @@ export const clients = [
       "Started with just a logo. Ended up with our whole online store. She designed it AND built it — didn't even need to brief two different people.",
     tags: ["design", "dev"],
     color: "#FFD23F",
-    link: "https://ecommerce-store.vercel.app/",
+    link: "https://mw-sports.vercel.app/",
     project: "Brand identity + E-commerce store",
   },
   {
@@ -327,10 +327,10 @@ export const clients = [
 // "me flork", shown above the clients list. Alternates sides like a
 // real chat thread.
 export const florkChat = [
-  { from: "client", text: "hii can u make my brand feel more... me?" },
-  { from: "me", text: "say less 🎨 gimme a few days" },
-  { from: "client", text: "omg you delivered EARLY" },
-  { from: "me", text: "told you i got you 😎" },
+  { from: "client", text: "bro... you're already done?" },
+  { from: "me", text: "i was locked in." },
+  { from: "client", text: "yeah, i can tell." },
+  { from: "me", text: "😌" },
 ];
 
 // Dev projects — each one is a real shipped project.

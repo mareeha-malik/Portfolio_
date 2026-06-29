@@ -42,7 +42,7 @@ function FullWidthChat() {
                 }}
               />
               <div
-                className={`font-hand text-base sm:text-lg px-5 py-3 rounded-2xl border-[2.5px] border-ink max-w-[70%] sm:max-w-[50%] shadow-[3px_3px_0_rgba(32,32,28,0.1)] ${
+                className={`font-hand text-base sm:text-lg px-5 py-3 rounded-2xl border-[2.5px] border-ink max-w-[70%] sm:max-w-[80%] shadow-[3px_3px_0_rgba(32,32,28,0.1)] ${
                   isMe
                     ? 'bg-pink-soft rounded-br-sm'
                     : 'bg-blue-soft rounded-bl-sm'

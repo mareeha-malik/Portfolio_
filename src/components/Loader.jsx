@@ -14,7 +14,7 @@ export default function Loader() {
 
   useEffect(() => {
     if (lineIndex < lines.length - 1) {
-      const t = setTimeout(() => setLineIndex((i) => i + 1), 380)
+      const t = setTimeout(() => setLineIndex((i) => i + 1), 500)
       return () => clearTimeout(t)
     }
     const t = setTimeout(() => setVisible(false), 500)
@@ -27,7 +27,7 @@ export default function Loader() {
         <motion.div
           className="fixed inset-0 z-[999] bg-ink flex items-center justify-center px-6"
           exit={{ y: '-100%' }}
-          transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
         >
           <div className="font-mono text-mint text-sm sm:text-base w-full max-w-md">
             {lines.slice(0, lineIndex + 1).map((line, i) => (

@@ -44,13 +44,15 @@ export default function FlorkChat() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.4 }}
-              className={`flex items-end gap-2 ${isMe ? 'flex-row-reverse self-end' : ''}`}
+              className={`flex items-end gap-2 w-fit max-w-[85%] ${
+                isMe ? 'flex-row-reverse self-end' : 'self-start'
+              }`}
             >
               <div className="shrink-0">
                 <MiniFlork tint={isMe ? '#FF6FA0' : '#3A5BFF'} flip={isMe} />
               </div>
               <div
-                className={`font-hand text-sm sm:text-base px-3 py-2 rounded-2xl border-2 border-ink max-w-[200px] ${
+                className={`font-hand text-base leading-snug px-3.5 py-2.5 rounded-2xl border-2 border-ink ${
                   isMe ? 'bg-pink-soft rounded-br-sm' : 'bg-blue-soft rounded-bl-sm'
                 }`}
               >
